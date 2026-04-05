@@ -2,7 +2,7 @@
 
 ## Installation
 ```sh
-curl -sL https://raw.githubusercontent.com/hoffmajf/coribly/main/coribly_color.sh -o ~/lib/coribly_color.sh
+curl -sL https://raw.githubusercontent.com/hoffmajf/Coribly/main/coribly_color.sh -o ~/lib/coribly_color.sh
 echo 'source ~/lib/coribly/coribly_color.sh' >> ~/.bashrc
 ```
 
