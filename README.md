@@ -1,20 +1,19 @@
-# Coribly - Shell Libraries
+# Coribly - Shell Library
 Custom Shell Library
-## Colors Colors
+## Coribly
+  * "Corium" = Leather/Shell/Outer layer (matches shell theme)
+  * "Bly" = Library (bibliotheca nod)
 
-Coribly:
-  "Corium" = Leather/Shell/Outer layer (matches shell theme)
-  "Bly" = Library (bibliotheca nod)
+_Pronunciation: "Kor-ih-blee" — elegant, memorable_
 
-   Pronunciation: "Kor-ih-blee" — elegant, memorable
-
-## Installation
-```sh
+### Color
+### Installation
+````
+sh
 curl -sL https://raw.githubusercontent.com/hoffmajf/Coribly/main/coribly_color.sh -o ~/lib/coribly_color.sh
-echo 'source ~/lib/coribly/coribly_color.sh' >> ~/.bashrc
-```
-
-## Usage
+echo 'source ~/lib/coribly/coribly_color.sh' >> ~/.bashrc'
+````
+### Usage
 ```sh
 source coribly_color.sh
 tSuccess "Colors work perfectly!"
