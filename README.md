@@ -1,4 +1,12 @@
 # Coribly - Shell Libraries
+Custom Shell Library
+## Colors Colors
+
+Coribly:
+  "Corium" = Leather/Shell/Outer layer (matches shell theme)
+  "Bly" = Library (bibliotheca nod)
+
+   Pronunciation: "Kor-ih-blee" — elegant, memorable
 
 ## Installation
 ```sh
