@@ -10,7 +10,7 @@
 # Banner
 #==============================================
 
-LIBRARY_DIRECTORY="${LIBRARY_DIRECTORY:-$HOME/Git/dotfiles/lib/coribly/}"
+: "${LIBRARY_DIRECTORY:?LIBRARY_DIRECTORY must be set before sourcing coribly_banner.sh}"
 . "${LIBRARY_DIRECTORY}coribly_color.sh"
 
 banner()

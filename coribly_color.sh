@@ -23,16 +23,6 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #----------------------------------------------
-# Library Information
-#----------------------------------------------
-SHELL_NAME="${0##*[\/]}"; export SHELL_NAME
-SCRIPT_NAME="coribly_color.sh"; export SCRIPT_NAME
-LIB_VERSION="1.0"; export LIB_VERSION
-LIB_AUTHOR="Jim Hoffman"; export LIB_AUTHOR
-LIB_URL="https://github.com/hoffmajf/coribly"; export LIB_URL
-LIB_LICENSE="MIT"; export LIB_LICENSE
-
-#----------------------------------------------
 # Guard against printf failure (ultra-rare)
 #----------------------------------------------
 printf_test=$(printf '\033[0m' 2>/dev/null) || {
@@ -161,14 +151,3 @@ tError() { printf "%s%s%s%s\n" "$BfRed" "$tBold" "$*" "$tReset" >&2; }
 tSuccess() { printf "%s%s%s%s\n" "$BfGreen" "$tBold" "$*" "$tReset"; }
 tWarn() { printf "%s%s%s%s\n" "$BfYellow" "$tBold" "$*" "$tReset" >&2; }
 tInfo() { printf "%s%s%s\n" "$fCyan" "$*" "$tReset" >&2; }
-
-#----------------------------------------------
-# Library Information Helper
-#----------------------------------------------
-tLibInfo() {
-    [ -n "${tUnderline-}" ] || tUnderline=""
-    [ -n "${tReset-}" ] || tReset=""
-    [ -n "${tBold-}" ] || tBold=""
-    printf "%sShell:%s\t%s%s%s\n" "$tUnderline" "$tReset" "$tBold" "$SHELL_NAME" "$tReset"
-    printf "%sLib:%s\t%s%s%s\tv%s\n\t%s\n" "$tUnderline" "$tReset" "$tBold" "$SCRIPT_NAME" "$tReset" "$LIB_VERSION" "$LIB_AUTHOR"
-}
